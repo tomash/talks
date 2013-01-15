@@ -1,3 +1,4 @@
 .rvmrc
 _site
 static
+tmp/*
