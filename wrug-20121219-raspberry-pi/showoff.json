@@ -1,4 +1,6 @@
-[ 
-  {"section":"intro"},
-  {"section":"raspberrypi"}
-]
+{
+  "sections":  [ 
+    {"section":"intro"},
+    {"section":"raspberrypi"}
+  ]
+}

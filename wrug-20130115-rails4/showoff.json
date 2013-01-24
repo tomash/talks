@@ -1,4 +1,6 @@
-[ 
-  {"section":"intro"},
-  {"section":"rails4"}
-]
+{
+  "sections":  [
+    {"section":"intro"},
+    {"section":"rails4"}
+  ]
+}
