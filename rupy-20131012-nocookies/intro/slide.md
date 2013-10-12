@@ -1,6 +1,6 @@
 !SLIDE title-slide
 
-# Living without cookies
+# Living Without Cookies
 ## healthy diet
 ## for your users' browsers
 ### Tomasz "Tomash" Stachewicz
