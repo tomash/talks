@@ -1,0 +1,17 @@
+{ 
+    "name": "Testowanie z użyciem RSpec", 
+    "sections": [ 
+        {"section":"intro"},
+        {"section":"theory"},
+        {"section":"rspec_installation"},
+        {"section":"describe"},
+        {"section":"rspec_rails"}
+//        {"section":"tdd_assert"},
+//        {"section":"rails_preparation"},
+//        {"section":"models"},
+//        {"section":"controllers"},
+//        {"section":"factories"},
+//        {"section":"stubs"},
+//        {"section":"outro"}
+    ]
+}
