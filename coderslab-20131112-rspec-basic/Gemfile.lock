@@ -29,6 +29,7 @@ GEM
     rack-protection (1.5.1)
       rack
     redcarpet (3.0.0)
+    rmagick (2.13.2)
     sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -43,4 +44,5 @@ DEPENDENCIES
   gli
   nokogiri
   pdfkit
+  rmagick
   showoff!

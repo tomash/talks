@@ -20,3 +20,6 @@
     end
 
 
+!SLIDE
+
+# ciąg dalszy jutro!

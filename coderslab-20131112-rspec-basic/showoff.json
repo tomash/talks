@@ -1,0 +1,10 @@
+{ 
+    "name": "Testowanie z użyciem RSpec", 
+    "sections": [ 
+        {"section":"intro"},
+        {"section":"theory"},
+        {"section":"rspec_installation"},
+        {"section":"describe"},
+        {"section":"rspec_rails"}
+    ]
+}

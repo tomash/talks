@@ -53,8 +53,8 @@
     describe Product do
       it "is available by default" do
         product = Product.new
-        product.available.should == true
-        product.available.should be_true
+        product.available?.should == true
+        product.available?.should be_true
         product.should be_available
       end
     end
