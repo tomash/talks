@@ -1,0 +1,6 @@
+{
+  "sections":  [
+    {"section":"intro"},
+    {"section":"sinatra"}
+  ]
+}

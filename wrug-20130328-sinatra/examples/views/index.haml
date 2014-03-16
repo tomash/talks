@@ -1,0 +1,7 @@
+%form{:action => '/', :method => :post}
+  %p
+    %label{:for => "count"} How many paragraphs?
+    %input{:name => 'count', :value => '5', :style => "width:25px"}
+
+  %p
+    %input{:type => 'submit', :name => 'button', :value => 'Generate'}
