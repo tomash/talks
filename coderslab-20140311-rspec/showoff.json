@@ -1,0 +1,16 @@
+{ 
+    "name": "Testowanie z użyciem RSpec", 
+    "sections": [ 
+        {"section":"intro"},
+        {"section":"theory"},
+        {"section":"rspec_installation"},
+        {"section":"describe"},
+        {"section":"rspec_rails_1"},
+        {"section":"rspec_rails_2"},
+        {"section":"rspec_rails_3"},
+        {"section":"rspec_mocking"},
+        {"section":"capybara_1"},
+        {"section":"capybara_2"},
+        {"section":"outro"}
+    ]
+}
