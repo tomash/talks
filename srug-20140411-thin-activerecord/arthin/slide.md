@@ -12,13 +12,13 @@
 !SLIDE
 
 ## 2007: Kontroler ma tylko odbierać żądanie i renderować wyniki, wrzucajmy logikę do modeli.
-## http://weblog.jamisbuck.org/2006/10/18/skinny-controller-fat-model
+## [http://weblog.jamisbuck.org/2006/10/18/skinny-controller-fat-model](http://weblog.jamisbuck.org/2006/10/18/skinny-controller-fat-model)
 
 
 !SLIDE
 
 ## 2013: Żadna klasa nie powinna być gruba (ani kontrolery, ani modele, ani żadne inne).
-## http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/
+## [http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
 
 
 !SLIDE bullets incremental
@@ -42,7 +42,9 @@
 
 !SLIDE
 
-# Bardziej jak: naturalny porządek degradacji aplikacji w Rails.
+# Bardziej jak:
+
+## naturalny porządek degradacji aplikacji w Rails.
 
 
 !SLIDE
@@ -80,9 +82,9 @@ Entropia kodu: średnia ilość odpowiedzialności przypadających na komponent 
 
 !SLIDE bullets
 
-# Konsekwencje: degradacja do antywzorców
+# Konsekwencje: antywzorce
 
-* Big Ball Of Mud
+* Big Ball of Mud
 * God Object
 * Magic Pushbutton
 * Object Orgy
@@ -109,8 +111,9 @@ Entropia kodu: średnia ilość odpowiedzialności przypadających na komponent 
 
 # Proponowana terapia klas ActiveRecord
 
-### Sytuacja idealna: klasa AR zawiera wyłącznie logikę której NIE MA w ActiveModel
-### czyli: persystencja, asocjacje, (scopes)
+sytuacja idealna: klasa AR zawiera wyłącznie logikę której NIE MA w ActiveModel
+
+czyli: persystencja, asocjacje, (scopes)
 
 
 !SLIDE bullets incremental
@@ -130,17 +133,17 @@ Entropia kodu: średnia ilość odpowiedzialności przypadających na komponent 
 
 ## Czasem dla świeżego spojrzenia warto przerzucić logikę do kontrolera.
 
-http://railscasts.com/episodes/398-service-objects
-http://railscasts.com/episodes/416-form-objects
+[http://railscasts.com/episodes/398-service-objects](http://railscasts.com/episodes/398-service-objects)
+[http://railscasts.com/episodes/416-form-objects](http://railscasts.com/episodes/416-form-objects)
 
 
 !SLIDE
 
 # Protip: Delegacja
 
-Ułatwia myślową separację zestawu rozmawiających ze sobą metod.
+Ułatwia wstępną separację zestawu rozmawiających ze sobą metod.
 
-Dobry wstęp do separacji realnej.
+Dobry początek separacji realnej.
 
 
 !SLIDE
@@ -157,8 +160,8 @@ Dobry wstęp do separacji realnej.
 
 # źródła
 
-* http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/
-* http://railscasts.com/episodes/398-service-objects
-* http://railscasts.com/episodes/416-form-objects
+* [http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
+* [http://railscasts.com/episodes/398-service-objects](http://railscasts.com/episodes/398-service-objects)
+* [http://railscasts.com/episodes/416-form-objects](http://railscasts.com/episodes/416-form-objects)
 * Avdi Grimm "Confident Ruby"
 * Andrzej Krzywda "Rails Refactoring"
