@@ -70,6 +70,7 @@ Kto rozwijał w Rails większą aplikację (5000+ LOC) w której nie trafiła si
 ## Społecznościówki: model Użytkownik
 ## Ecommerce: model Zamówienie
 
+"(Najbardziej puchnie) klasa skupiająca główną logikę domenową."
 
 !SLIDE
 
@@ -121,10 +122,18 @@ czyli: persystencja, asocjacje, (scopes)
 # Proponowana kolejność
 
 * Callbacki -> Service, Builder
-* Walidacje (także before_validation) -> FormObject
+* Walidacje -> FormObject
 * Logika wieloklasowa -> Mediator
 * Prezentacja -> Decorator
 * Wysyłanie emaili -> Kontroler
+
+
+!SLIDE bullets
+
+# trudności z Form Object
+
+* brak ActiveRecord::Validations (uniqueness)
+* brak bąbelkowania błędów walidacji
 
 
 !SLIDE
@@ -148,10 +157,11 @@ Dobry początek separacji realnej.
 
 !SLIDE
 
-# Kolejne wzorce warte spróbowania
+# Dalsze zagadnienia
 
-## 1.NullObject
-## 2. Object Trees (vs. Lone Wolves)
+## 1. Virtus coercions
+## 2. NullObject
+## 3. Object Trees (vs. Lone Wolves)
 
 -> Avdi Grimm "Confident Ruby"
 
