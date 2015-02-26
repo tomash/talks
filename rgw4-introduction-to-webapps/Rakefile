@@ -1,0 +1,35 @@
+require 'slippery'
+
+Slippery::RakeTasks.new do
+  title "Wprowadzenie do aplikacji webowych"
+  type :reveal_js
+  add_highlighting :default, '8.2'
+
+  # Fathom
+  #js_options scrollLength: 0, displayMode: 'single'
+
+  # Deck.js
+  # js_options extensions: ['navigation'], theme: 'neon', transition_theme: nil
+
+  # reveal_js
+  js_options theme: 'simple',
+             transition: 'linear', # default/cube/page/concave/zoom/linear/fade/none
+             transitionSpeed: 'default', # default/fast/slow
+             backgroundTransition: 'default', # default/none/slide/concave/convex/zoom
+             width: 1280,  #1680,
+             height: 800,  #1050
+             loop: true
+
+
+# beige
+# default
+# moon
+# night
+# serif
+# simple
+# sky
+# solarized
+
+  pack_assets
+
+end
