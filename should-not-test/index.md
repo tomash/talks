@@ -1,4 +1,4 @@
-# When you should not write tests.
+# When you should not write tests
 
 ### Tomasz Stachewicz
 
@@ -42,7 +42,7 @@ Popular "if you don't know how to implement it, write test cases for it" meme.
 
 ---
 
-Result: ugly, bad-written code which needs refactoring before it was even created, with lots of tests for edge cases that result from bad, un-considered code in the first place.
+Result: ugly, bad-written code which needs refactoring before it was even created, with lots of tests for edge cases coming from bad, un-considered code in the first place.
 
 ---
 
@@ -58,11 +58,11 @@ If you don't have an idea, think more: read, talk to people, go for a walk.
 
 ---
 
-Purpose of tests: ensure code works as expected, prevent regressions.
+Remember the purpose of tests?
 
 ---
 
-Purpose is defeated if you don't know how expectations would be missed or what kind of regression could it prevent.
+Purpose is defeated if test won't fail.
 
 "Fails only if method is removed" is not a good reason to keep the test.
 
@@ -110,7 +110,7 @@ See: Object Orgy -- an antipattern (violation of Law of Demeter).
 
 Don't. Just don't.
 
-Duplication indicates either shitty, repeated code or shitty, repeated tests. Often both.
+Duplication indicates shitty, repeated code or shitty, repeated tests. Often both.
 
 ---
 

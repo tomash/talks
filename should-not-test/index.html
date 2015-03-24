@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="reveal"><div class="slides">
-<section><h1>When you should not write tests.</h1>
+<section><h1>When you should not write tests</h1>
 <h3>Tomasz Stachewicz</h3>
 <p>@_tomash</p>
 </section><section name="1">
@@ -32,7 +32,7 @@ even more often than untested code.</p>
 </section><section name="7">
 <p>Popular &ldquo;if you don&rsquo;t know how to implement it, write test cases for it&rdquo; meme.</p>
 </section><section name="8">
-<p>Result: ugly, bad-written code which needs refactoring before it was even created, with lots of tests for edge cases that result from bad, un-considered code in the first place.</p>
+<p>Result: ugly, bad-written code which needs refactoring before it was even created, with lots of tests for edge cases coming from bad, un-considered code in the first place.</p>
 </section><section name="9">
 <h3>Solution: think.</h3>
 <p>If you don&rsquo;t have an idea, think more: read, talk to people, go for a walk.</p>
@@ -40,9 +40,9 @@ even more often than untested code.</p>
 </section><section name="10">
 <h3>2. You don&rsquo;t know when this test would fail.</h3>
 </section><section name="11">
-<p>Purpose of tests: ensure code works as expected, prevent regressions.</p>
+<p>Remember the purpose of tests?</p>
 </section><section name="12">
-<p>Purpose is defeated if you don&rsquo;t know how expectations would be missed or what kind of regression could it prevent.</p>
+<p>Purpose is defeated if test won&rsquo;t fail.</p>
 <p>&ldquo;Fails only if method is removed&rdquo; is not a good reason to keep the test.</p>
 </section><section name="13">
 <h3>Solution: think.</h3>
@@ -66,7 +66,7 @@ even more often than untested code.</p>
 <h3>5. Test is copypasted.</h3>
 </section><section name="21">
 <p>Don&rsquo;t. Just don&rsquo;t.</p>
-<p>Duplication indicates either shitty, repeated code or shitty, repeated tests. Often both.</p>
+<p>Duplication indicates shitty, repeated code or shitty, repeated tests. Often both.</p>
 </section><section name="22">
 <h3>Ending remarks.</h3>
 <p>Tests are still code: they are a cost to develop and cost to maintain.</p>
