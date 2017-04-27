@@ -1,0 +1,70 @@
+CREATE DATABASE parallel_fun;
+CREATE TABLE people (id int primary key not null, age int not null);
+INSERT INTO people SELECT id, (random()*100)::integer AS age FROM generate_series(1,10000000) AS id;
+
+EXPLAIN ANALYZE SELECT * FROM people WHERE age = 6;
+
+SET max_parallel_workers_per_gather = 2;
+EXPLAIN ANALYZE SELECT * FROM people WHERE age = 6;
+
+EXPLAIN ANALYZE SELECT * FROM people WHERE age < 6;
+
+EXPLAIN ANALYZE SELECT * FROM people WHERE age >= 18;
+EXPLAIN ANALYZE SELECT * FROM people WHERE age < 9;
+
+
+
+https://www.postgresql.org/docs/9.6/static/parallel-query.html
+
+Queries that touch a large amount of data but return only a few rows to the user will typically benefit most.
+
+https://www.postgresql.org/docs/9.6/static/when-can-parallel-query-be-used.html
+
+
+Even when it is in general possible for parallel query plans to be generated, the planner will not generate them for a given query if any of the following are true:
+
+* The query writes any data or locks any database rows.
+
+* The query might be suspended during execution.
+
+* The query uses any function marked PARALLEL UNSAFE. 
+
+* The query is running inside of another query that is already parallel.
+
+* The transaction isolation level is serializable.
+
+
+Force parallel:
+
+SET parallel_tuple_cost TO 0;
+
+EXPLAIN ANALYZE SELECT * FROM people WHERE age < 9;
+
+EXPLAIN ANALYZE SELECT * FROM people WHERE age < 30;
+
+AGGREGATION:
+
+https://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=e06a38965b3bcdaa881e7e06892d4d8ab6c2c980
+
+SET max_parallel_workers_per_gather TO 0;
+
+EXPLAIN ANALYZE SELECT avg(age) FROM people;
+
+
+JOINS:
+
+https://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=45be99f8cd5d606086e0a458c9c72910ba8a613d
+
+CREATE TABLE pets (owner_id int not null, type character(3) not null);
+CREATE INDEX pets_owner_id ON pets (owner_id);
+\d pets;
+
+INSERT INTO pets SELECT (random()*10000000)::integer AS owner_id, ('{cat,dog}'::text[])[ceil(random()*2)] as type FROM generate_series(1,10000000);
+
+SET max_parallel_workers_per_gather TO 0;
+EXPLAIN ANALYZE SELECT * FROM pets JOIN people ON pets.owner_id = people.id WHERE pets.type = 'cat' AND people.age = 18;
+
+SET max_parallel_workers_per_gather TO 4;
+EXPLAIN ANALYZE SELECT * FROM pets JOIN people ON pets.owner_id = people.id WHERE pets.type = 'cat' AND people.age = 18;
+
+EXPLAIN ANALYZE SELECT COUNT(type) FROM pets GROUP BY type;

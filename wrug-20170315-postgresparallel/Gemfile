@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+
+gem 'slippery', :git => 'git@github.com:plexus/slippery.git'
+gem 'hexp'
+gem 'asset_packer'
