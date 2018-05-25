@@ -1,0 +1,4 @@
+- spreadsheets are the basic tool for many people
+- default interface and way of thinking about data
+- "most saas startups need to fight excel"
+- spreadsheets get shit done
