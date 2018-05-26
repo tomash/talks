@@ -25,7 +25,7 @@
 
 ---
 
-## ...in decline?
+## are they in decline?
 
 ---
 
@@ -52,7 +52,7 @@
 --- 
 
 ![Google Script code](images/googlesheets-script.png)
-<!-- .element width="70%" -->
+<!-- .element width="60%" -->
 
 ---
 
