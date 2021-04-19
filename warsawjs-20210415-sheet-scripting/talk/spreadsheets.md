@@ -33,7 +33,8 @@
 
 ---
 
-## przystępność, dane <-> interfejs
+## przystępność
+## dane <-> interfejs
 
 ---
 
