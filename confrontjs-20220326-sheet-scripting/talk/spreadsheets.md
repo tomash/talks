@@ -21,12 +21,6 @@ coding since 2005
 
 ---
 
-### Still an engineer!
-
-<img src="images/still-an-engineer.png" style="border:none; box-shadow:none; width:80%">
-
----
-
 ## We are developers
 
 ### We like building stuff
@@ -60,6 +54,8 @@ coding since 2005
 (not mine, author unknown)
 
 ---
+
+### 'sheets are
 
 * familiar
 * easy to use and adapt
@@ -190,3 +186,25 @@ Drawbacks and risks
 # That's all, folks!
 
 ---
+
+# ... or not?
+
+(dinner-driven development)
+
+---
+
+### Can you keep data in another spreadsheet and fetch it with API?
+
+### Like, via Sheetsu?
+
+---
+
+(live coding)
+
+---
+
+<img src="images/xzibit.jpeg" alt="Xzibit" style="border:none; box-shadow:none; width:100%">
+
+---
+
+# That's really all now!

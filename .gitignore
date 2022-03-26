@@ -3,3 +3,5 @@ _site
 static
 tmp/*
 viewstats.json
+.DS_Store
+
